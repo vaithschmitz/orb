@@ -1,0 +1,43 @@
+.Post-container{
+    display: grid;
+    grid-template-areas: 'a a a' 'c c c' 'd d d'; 
+    margin-bottom: 2vh;
+    background-color: #f8f8f8;
+    color: #858585;
+    text-align: left;
+}
+
+.Post-title{
+    grid-area: a;
+    display: flex;
+    align-items: center;
+    
+    font-size: 2vh;
+    height: 8vh
+}
+
+.Post-content{
+    grid-area: c;
+    font-size: 1.5vh;
+    margin-top: 0.5vh
+}
+.Post-reference{
+    grid-area: d;
+    font-size: 1.5vh;
+    margin-top: 0.5vh
+}
+
+.Post-content-hidden{
+    display: none;
+}
+
+.Post-reference-hidden{
+    display: none
+}
+
+.chevron{
+    height: 2vh;
+    color: #858585;
+    text-align: right;
+
+}

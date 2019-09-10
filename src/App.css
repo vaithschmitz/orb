@@ -1,33 +1,64 @@
-.App {
+#App {
+  display: grid;
+  grid-template-areas: 'a a' 'b c' 'd e';
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#App-top{
+  grid-area: a;
+  height: 20vh;
+  width: 100vw;
+  background-color: #f8f8f8;
+  color: #757575;
+  font-size: 5vh
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#App-formLabel{
+  font-size: 2vh;
+}
+
+#App-formInput{
+  -webkit-appearance: none;
+  border-radius: 3px;
+  margin-left: 3vw;
+  height: 3vh;
+  width: 20vw
+}
+
+.App-header-left, .App-header-right{
   display: flex;
-  flex-direction: column;
+  height: 5vh;
+  width: 40vw;
+  margin-bottom: 1vh;
+  margin-left: 5vw;
+  background-color: #ececec;
+  color: #858585;
+  font-size: 2vh;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center
 }
 
-.App-link {
-  color: #61dafb;
+.App-header-left{
+  grid-area: b;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#App-left, #App-right{
+  height: 60vh;
+  width: 40vw;
+  margin-left: 5vw;
+  margin-bottom: 5vh;
+  overflow: scroll
+}
+
+#App-left{
+  grid-area: d;
+}
+
+.App-header-right{
+  grid-area: c
+}
+
+#App-right{
+  grid-area: e
 }
